@@ -37,7 +37,7 @@ public class CommonController {
         String suffix = originalFilename.substring(originalFilename.lastIndexOf("."));  //.jpg
 
         // 使用UUID重新生成文件名，防止文件名称重复造成文件覆盖
-        String fileName = UUID.randomUUID().toString() + suffix;    // sdfaiourei.jpg
+        String fileName = UUID.randomUUID().toString() + suffix;    // .jpg
 
         // 创建一个目录对象
         File dir = new File(basePath);

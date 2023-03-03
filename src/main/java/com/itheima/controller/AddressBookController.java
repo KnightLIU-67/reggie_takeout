@@ -30,7 +30,6 @@ public class AddressBookController {
     @PostMapping
     public R<AddressBook> save(@RequestBody AddressBook addressBook) {
         addressBook.setUserId(BaseContext.getCurrentId());
-        log.info("addressBook:{}", addressBook);
         addressBookService.save(addressBook);
         return R.success(addressBook);
     }
