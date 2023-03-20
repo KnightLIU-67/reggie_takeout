@@ -35,7 +35,11 @@ public class LoginCheckFilter implements Filter {
                 "/front/**"    ,     // 移动端页面的静态资源
                 "/common/**",
                 "/user/sendMsg",
-                "/user/login"
+                "/user/login",
+                "/doc.html",
+                "/webjars/**",
+                "/swagger-resources",
+                "/v2/api-docs"
         };
         // 3.判断本次请求URL是否需要拦截
         Boolean check = check(urls, requestURI);
