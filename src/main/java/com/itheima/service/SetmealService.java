@@ -5,6 +5,7 @@ import com.itheima.common.R;
 import com.itheima.dto.SetmealDto;
 import com.itheima.entity.Category;
 import com.itheima.entity.Setmeal;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -39,5 +40,6 @@ public interface SetmealService extends IService<Setmeal> {
 
     // 根据条件查询套餐集合
     List<Setmeal> list(Setmeal setmeal);
+
 
 }
